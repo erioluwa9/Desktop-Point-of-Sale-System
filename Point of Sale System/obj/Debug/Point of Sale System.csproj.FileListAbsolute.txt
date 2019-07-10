@@ -1,0 +1,66 @@
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\Point of Sale System.exe.config
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\Point of Sale System.exe
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\Point of Sale System.pdb
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\MaterialDesignColors.dll
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Point of Sale System.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\MainWindow.g.cs
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\App.g.cs
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Point of Sale System_MarkupCompile.cache
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Point of Sale System_MarkupCompile.lref
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\App.baml
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\MainWindow.baml
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Point of Sale System.g.resources
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Point_of_Sale_System.Properties.Resources.resources
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Point of Sale System.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Point of Sale System.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Point of Sale System.csproj.CopyComplete
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Point of Sale System.exe
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Point of Sale System.pdb
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Views\Customer.g.cs
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Views\Category.g.cs
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Views\Product.g.cs
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Views\Customer.baml
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Views\Category.baml
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Views\Product.baml
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Views\Sales.g.cs
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Views\Sales.baml
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Views\SaleDetail.g.cs
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Views\SaleDetail.baml
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\BespokeFusion.dll
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\MahApps.Metro.dll
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\MahApps.Metro.pdb
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\MahApps.Metro.xml
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Views\AddCustomer.g.cs
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Views\AddCustomer.baml
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Dashboard.g.cs
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Dashboard.baml
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\EntityFramework.dll
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\EntityFramework.xml
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\ControlzEx.dll
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\ControlzEx.pdb
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\MaterialDesignColors.pdb
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Point_of_Sale_System.Migrations.GeneralMovement.resources
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\CommonServiceLocator.dll
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Point_of_Sale_System.Migrations.ChangingDoubleToDecimal.resources
+C:\Users\User\source\repos\Point of Sale System\Point of Sale System\obj\Debug\Point_of_Sale_System.Migrations.ChangingDoubleToDecimal2.resources

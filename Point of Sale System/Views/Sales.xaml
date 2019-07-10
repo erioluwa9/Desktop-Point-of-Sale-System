@@ -1,0 +1,171 @@
+﻿<Page x:Class="Point_of_Sale_System.Sales"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Point_of_Sale_System"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Sales" Loaded="Page_Loaded">
+
+
+    <StackPanel Background="#FFDADADA">
+        <StackPanel.Effect>
+            <DropShadowEffect BlurRadius="20" Color="#FFB4B4B4" RenderingBias="Quality" ShadowDepth="1"/>
+        </StackPanel.Effect>
+        <Grid Background="#FF6236B0">
+            <materialDesign:PackIcon Kind="Sale" Background="{x:Null}" Foreground="White" VerticalAlignment="Center" Margin="330,0,0,0" Height="30" Width="29"/>
+            <TextBlock Text="SALES" Width="200" TextAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontFamily="Calibri" FontSize="20" FontStyle="Italic"/>
+
+        </Grid>
+        <Grid Height="182" Margin="7,0,-36,0" RenderTransformOrigin="0.721,0.701">
+
+
+            <Label Content=" Customer:" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Height="24" Margin="9,16,0,0"  HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="13" />
+            <ComboBox SelectionChanged="MyCustomerComboBox_SelectionChanged"
+                Margin="94,12,404,140" x:Name="myCustomerComboBox" BorderThickness="0"
+                Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" 
+                Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" 
+                Style="{StaticResource MaterialDesignComboBox}"
+                ItemsSource="{Binding CustomerNameComboBox}"
+                DisplayMemberPath="Name"
+                materialDesign:HintAssist.Hint="Choose Item"/>
+
+
+            <Button Margin="416,10,323,142" x:Name="addCustomer" Click="AddCustomer_Click" Background="#FF6236B0" BorderBrush="#FF8D3DC3" Height="Auto">
+                <Grid Width="150">
+                    <TextBlock HorizontalAlignment="Center" Text="Add" FontFamily="DengXian" FontWeight="Normal" FontSize="13" Margin="0,0,122,-2" Width="28" Height="16" VerticalAlignment="Top"/>
+                </Grid>
+            </Button>
+            <Button x:Name="transButton" Click="Trans_Click" Margin="16,76,601,75" Background="#FF6236B0" BorderBrush="#FF8D3DC3" Height="Auto">
+                <Grid Width="150">
+                    <TextBlock HorizontalAlignment="Center" Text="New Transaction" FontFamily="DengXian" FontWeight="Normal" FontSize="13" Margin="20,-3,-10,0" Width="140"/>
+                </Grid>
+            </Button>
+            <Label Content="Transaction ID:" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Height="24" Margin="232,78,0,0" Width="98" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="13" />
+            <TextBox x:Name="transID" IsReadOnly="True"
+             Margin="336,75,323,76" FontSize="15" FontFamily="Calibri" BorderThickness="0" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="170" TextAlignment="Center" HorizontalAlignment="Center">
+                <TextBox.Effect>
+                    <DropShadowEffect Color="#FFB2ADAD" BlurRadius="20"/>
+                </TextBox.Effect>
+            </TextBox>
+
+            <Label Content=" Category:" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Height="24" Margin="6,122,0,0" Width="123" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="13" />
+
+            <ComboBox SelectionChanged="MyCategoryComboBox_SelectionChanged"
+                Margin="82,120,577,34" x:Name="myCategoryComboBox" BorderThickness="0"
+                Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" 
+                Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" 
+                Style="{StaticResource MaterialDesignComboBox}"
+                ItemsSource="{Binding CategoryListComboBox}"
+                      DisplayMemberPath="Name"
+                materialDesign:HintAssist.Hint="Choose Item"/>
+
+            <Label Content=" Product:" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Height="24" Margin="266,122,0,0" Width="123" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="13" />
+            <ComboBox SelectionChanged="MyProductComboBox_SelectionChanged"
+                Margin="338,120,321,34" x:Name="myProductComboBox" BorderThickness="0"
+                Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" 
+                Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" 
+                Style="{StaticResource MaterialDesignComboBox}"
+                materialDesign:HintAssist.Hint="Choose Item"/>
+
+            <Label Content=" Price:" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Height="24" Margin="6,168,0,-10" Width="123" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="13" />
+            <TextBox x:Name="price" IsReadOnly="True"
+                Margin="48,163,696,-12" FontSize="15" FontFamily="Calibri" BorderThickness="0" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="85" TextAlignment="Center" HorizontalAlignment="Center">
+                <TextBox.Effect>
+                    <DropShadowEffect Color="#FFB2ADAD" BlurRadius="20"/>
+                </TextBox.Effect>
+            </TextBox>
+            <Label Content=" Quantity:" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Height="24" Margin="112,168,0,-10" Width="123" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="13" />
+
+
+            <TextBox x:Name="quantity" SelectionChanged="Quantity_SelectionChanged"
+                Margin="174,163,565,-12" FontSize="15" FontFamily="Calibri" BorderThickness="0" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="90" TextAlignment="Center" HorizontalAlignment="Center">
+                <TextBox.Effect>
+                    <DropShadowEffect Color="#FFB2ADAD" BlurRadius="20"/>
+                </TextBox.Effect>
+            </TextBox>
+            <Label Content=" Sub Total:" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Height="24" Margin="234,168,0,-10" Width="123" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="13" />
+            <TextBox x:Name="subTotal" IsReadOnly="True"
+                Margin="301,163,424,-12" FontSize="15" FontFamily="Calibri" BorderThickness="0" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="104" TextAlignment="Center" HorizontalAlignment="Center">
+                <TextBox.Effect>
+                    <DropShadowEffect Color="#FFB2ADAD" BlurRadius="20"/>
+                </TextBox.Effect>
+            </TextBox>
+
+            <Button x:Name="salesSaveToList" Click="SalesSaveToList_Click" Margin="16,212,574,-60" Background="#FF6236B0" BorderBrush="#FF8D3DC3" Height="Auto">
+                <Grid Width="150">
+                    <TextBlock HorizontalAlignment="Right" Text="Add Product To List" FontFamily="DengXian" FontWeight="Normal" FontSize="13" Margin="0,2,-3,2" Width="143"/>
+                </Grid>
+            </Button>
+
+            <Button x:Name="Update" Click="Update_Click" Margin="268,212,322,-60" Background="#FF6236B0" BorderBrush="#FF8D3DC3" Height="Auto">
+                <Grid Width="150">
+                    <TextBlock HorizontalAlignment="Center" Text="Update Product Item" FontFamily="DengXian" FontWeight="Normal" FontSize="13" Margin="10,2,-3,2" Width="143"/>
+                </Grid>
+            </Button>
+
+            <Label Content="Amount Due:" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Height="24" Margin="552,34,0,0" Width="123" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="13" />
+            <TextBox x:Name="amountDue" IsReadOnly="True"
+                Margin="654,29,55,122" FontSize="15" FontFamily="Calibri" BorderThickness="0" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="120" TextAlignment="Center" HorizontalAlignment="Center">
+                <TextBox.Effect>
+                    <DropShadowEffect Color="#FFB2ADAD" BlurRadius="20"/>
+                </TextBox.Effect>
+            </TextBox>
+            <Label Content=" Amount Paid:" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Height="24" Margin="552,86,0,0" Width="123" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="13" />
+            <TextBox x:Name="amountPaid" SelectionChanged="AmouuntPaid_SelectionChanged"
+                Margin="654,83,55,68" FontSize="15" FontFamily="Calibri" BorderThickness="0" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="120" TextAlignment="Center" HorizontalAlignment="Center">
+                <TextBox.Effect>
+                    <DropShadowEffect Color="#FFB2ADAD" BlurRadius="20"/>
+                </TextBox.Effect>
+            </TextBox>
+            <Label Content=" Change:" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Height="24" Margin="552,160,0,-2" Width="123" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="13" />
+            <TextBox x:Name="change"
+                Margin="639,155,55,-4" FontSize="15" FontFamily="Calibri" BorderThickness="0" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Width="135" TextAlignment="Center" HorizontalAlignment="Center">
+                <TextBox.Effect>
+                    <DropShadowEffect Color="#FFB2ADAD" BlurRadius="20"/>
+                </TextBox.Effect>
+            </TextBox>
+            <Button Margin="596,212,75,-60" x:Name="SavePayment" Click="SavePayment_Click" Background="#FF6236B0" BorderBrush="#FF8D3DC3" Height="Auto">
+                <Grid Width="150">
+                    <TextBlock HorizontalAlignment="Center" Text="Save Payment" FontFamily="DengXian" FontWeight="Normal" FontSize="13" Margin="14,0,43,0" Width="93"/>
+                </Grid>
+            </Button>
+            <DatePicker SelectedDate="{x:Static sys:DateTime.Now}" x:Name="dateOfSales" 
+                Margin="388,166,323,-10" FontSize="15" FontFamily="Calibri" BorderThickness="0" Foreground="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="209*"/>
+                <ColumnDefinition Width="592*"/>
+            </Grid.ColumnDefinitions>
+            <DataGrid x:Name="mySalesDatagrid" CanUserAddRows="False" IsReadOnly="True" AlternatingRowBackground="#DCDCDC" MinWidth="20" Margin="18,76,286,-36" Grid.ColumnSpan="2">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="Edit">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Edit" Click="BtnEdit_Click"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Delete">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Delete" Click="BtnDelete_Click"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="Product" Binding="{Binding ProductName}" />
+                    <DataGridTextColumn Header="Price" Binding="{Binding Price}" />
+                    <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" />
+                    <DataGridTextColumn Header="Sub-Total" Binding="{Binding TotalAmount}" />
+
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
+    </StackPanel>
+</Page>
